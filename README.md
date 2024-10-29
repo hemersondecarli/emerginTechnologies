@@ -10,6 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - added README.md
 - added gitignore
+- added and completed Task 1
+
+## [0.0.2] - 29/10/2024
+### Added
+- added and completed Task 2
 
 ### Task 1: Third-order Letter Approximation Model
 - Creating a third-order letter approximation model from five English texts sourced from Project Gutenberg. texts will be processed by:
