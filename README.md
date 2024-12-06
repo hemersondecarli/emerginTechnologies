@@ -1,51 +1,76 @@
-# README
-All notable changes to this project will be documented in this file.
+# **Project: Trigram-Based Text Generation and Analysis**
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+This project focuses on building a trigram-based text generation model, analyzing its output, and exporting the model for reuse. The generated text is created using third-order letter approximation and evaluated for quality using a dictionary of valid English words.
 
-- Explanation of the recommended reverse chronological release ordering.
+## **Changelog**
+This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) and follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-## [0.0.1] - 28/10/2024
-### Added
-- added README.md
-- added gitignore
-- added and completed Task 1
+### **Added**
+- Initial README.md file.
+- `.gitignore` file for project organization.
+- Completed implementation of:
+  - **Task 1**: Building the trigram model.
+  - **Task 2**: Text generation using the model.
+  - **Task 3**: Analyzing the generated text for valid English words.
+  - **Task 4**: Exporting the model as JSON.
 
-## [0.0.2] - 29/10/2024
-### Added
-- added and completed Task 2
+---
 
-### Task 1: Third-order Letter Approximation Model
-- Creating a third-order letter approximation model from five English texts sourced from Project Gutenberg. texts will be processed by:
-- Removing unnecessary content (preamble, postamble).
-- Retaining only ASCII letters, full stops, and spaces.
-- Converting all letters to uppercase.
-- Count the occurrences of each trigram (a sequence of three characters) to build a model of the English language based on these texts.
+## **Tasks Overview**
 
-### Task 2: Text Generation Using Trigram Model
-- Initialize Generation: Start with the seed "TH".
-- Generate Text: Use the last two characters as a prefix to find matching trigrams. Randomly select the next character based on the frequency (weight) of each trigram.
-- Completion: Generate a total of 10,000 characters or stop if no matching trigrams are found.
-- Output: Display the first 500 characters of the generated text as a sample.
+### **Task 1: Third-Order Letter Approximation Model**
+- **Objective**: Create a trigram model based on five English texts sourced from Project Gutenberg.
+- **Steps**:
+  1. **Text Preprocessing**:
+     - Remove unnecessary content (preamble, postamble).
+     - Retain only ASCII letters, full stops, and spaces.
+     - Convert all letters to uppercase.
+  2. **Trigram Model Creation**:
+     - Count the occurrences of each trigram (a sequence of three characters).
+     - Store the trigram counts in a dictionary to model the English language.
 
-### Task 3: Analyze your model
-- Load English Words: Use the provided words.txt file containing a list of valid English words.
-- Extract Words: Split the generated 10,000-character text into individual words and normalize them for comparison.
-- Compare Words: Check each word from the generated text against the list of valid English words.
-- Calculate Percentage: Compute the percentage of valid English words out of the total words in the generated text.
-- Output: Display the total word count, valid word count, and percentage of valid English words.
+---
 
-### Task 4: Export Trigram Model as JSON
-- Export Format: Saved the trigram model as a JSON file to allow easy sharing and reuse.
-- Output File: trigrams.json contains the trigram model with:
-Trigrams as keys.
-Their occurrence counts as values.
-- Export Process:
-Used Python’s built-in json library.
-Ensured the JSON file is formatted with indentation for readability.
-- Usage:
-The exported JSON file can be loaded into other applications or projects for further analysis or visualization.
+### **Task 2: Text Generation Using Trigram Model**
+- **Objective**: Generate a 10,000-character string based on the trigram model.
+- **Steps**:
+  1. **Initialize**: Start with the seed `"TH"`.
+  2. **Generate**: Use the last two characters as a prefix to find matching trigrams.
+  3. **Weighted Selection**: Randomly select the next character based on trigram frequencies.
+  4. **Complete**: Generate a total of 10,000 characters or stop if no matching trigrams are found.
+  5. **Output**: Display the first 500 characters of the generated text as a sample.
 
-### LICENSE
-- This project uses publicly available texts from Project Gutenberg and follows their terms of use.
+---
+
+### **Task 3: Analyze Your Model**
+- **Objective**: Evaluate the quality of the generated text by calculating the percentage of valid English words.
+- **Steps**:
+  1. **Load English Words**: Use the `words.txt` file containing a list of valid English words.
+  2. **Extract Words**: Split the generated text into individual words and normalize them for comparison.
+  3. **Validate Words**: Check each word against the list of valid English words.
+  4. **Calculate**: Compute the percentage of valid English words out of the total words in the generated text.
+  5. **Output**: Display the total word count, valid word count, and percentage of valid English words.
+
+---
+
+### **Task 4: Export Trigram Model as JSON**
+- **Objective**: Save the trigram model as a JSON file for reuse.
+- **Steps**:
+  1. **Export Format**: Save the trigram model as `trigrams.json` with:
+     - Trigrams as keys.
+     - Their occurrence counts as values.
+  2. **Process**:
+     - Use Python’s built-in `json` library to export the dictionary.
+     - Format the JSON file with indentation for readability.
+  3. **Output**: The JSON file can be loaded into other applications or projects for further analysis or visualization.
+
+---
+
+## **License**
+This project uses publicly available texts from Project Gutenberg and adheres to their terms of use.
+
+---
+
+### **Additional Notes**
+- This project uses standard Python libraries, such as `re` and `json`.
+- Each task was documented and implemented incrementally, with issues tracked via GitHub.
