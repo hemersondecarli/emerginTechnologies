@@ -69,8 +69,4 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ## **License**
 This project uses publicly available texts from Project Gutenberg and adheres to their terms of use.
 
----
 
-### **Additional Notes**
-- This project uses standard Python libraries, such as `re` and `json`.
-- Each task was documented and implemented incrementally, with issues tracked via GitHub.
