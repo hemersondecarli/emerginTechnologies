@@ -36,5 +36,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Calculate Percentage: Compute the percentage of valid English words out of the total words in the generated text.
 - Output: Display the total word count, valid word count, and percentage of valid English words.
 
+### Task 4: Export Trigram Model as JSON
+- Export Format: Saved the trigram model as a JSON file to allow easy sharing and reuse.
+- Output File: trigrams.json contains the trigram model with:
+Trigrams as keys.
+Their occurrence counts as values.
+- Export Process:
+Used Python’s built-in json library.
+Ensured the JSON file is formatted with indentation for readability.
+- Usage:
+The exported JSON file can be loaded into other applications or projects for further analysis or visualization.
+
 ### LICENSE
 - This project uses publicly available texts from Project Gutenberg and follows their terms of use.
