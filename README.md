@@ -29,6 +29,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Completion: Generate a total of 10,000 characters or stop if no matching trigrams are found.
 - Output: Display the first 500 characters of the generated text as a sample.
 
+### Task 3: Analyze your model
+- Load English Words: Use the provided words.txt file containing a list of valid English words.
+- Extract Words: Split the generated 10,000-character text into individual words and normalize them for comparison.
+- Compare Words: Check each word from the generated text against the list of valid English words.
+- Calculate Percentage: Compute the percentage of valid English words out of the total words in the generated text.
+- Output: Display the total word count, valid word count, and percentage of valid English words.
 
 ### LICENSE
 - This project uses publicly available texts from Project Gutenberg and follows their terms of use.
