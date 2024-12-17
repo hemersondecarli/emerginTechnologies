@@ -63,13 +63,13 @@ body {
 
 #conversation div:nth-child(odd) {
     align-self: flex-start;
-    background-color: #e0e0e0;
+    background-color: #097af1;
     color: #000000;
 }
 
 #conversation div:nth-child(even) {
     align-self: flex-end;
-    background-color: #007bff;
+    background-color: #bdbdbd;
     color: #ffffff;
 }
 
