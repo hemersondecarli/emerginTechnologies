@@ -66,6 +66,24 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+### **Eliza Chatbot**
+- **Objective**: Build a simple chatbot that mimics conversations using pattern matching.
+- **Features**:
+  1. **Interactive Interface**:
+     - user-friendly layout using HTML and CSS.
+     - Text input box and chat window to display the conversation history.
+  2. **Conversational Logic**:
+     - Implemented in plain JavaScript (`eliza-functions.js`).
+     - Responds to keywords like "hello", "mother".
+     - Includes randomized responses for dynamic interaction.
+  3. **Deployment**:
+     - Hosted via GitHub Pages for public access.
+
+- **Live Demo**:
+  [Eliza Chatbot](https://hemersondecarli.github.io/emerginTechnologies/)
+
+---
+
 ## **License**
 This project uses publicly available texts from Project Gutenberg and adheres to their terms of use.
 
