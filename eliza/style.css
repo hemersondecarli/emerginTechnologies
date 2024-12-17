@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chatbot container */
+#chatbot-container {
+    width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+#chatbot-header {
+    background: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+#chatbot-header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+#chatbot-header p {
+    margin: 5px 0 0;
+    font-size: 1em;
+}
+
+/* Conversation container */
+#conversation-container {
+    flex: 1;
+    padding: 15px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#conversation {
+    display: flex;
+    flex-direction: column;
+}
+
+#conversation div {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 18px;
+    max-width: 75%;
+}
+
+#conversation div:nth-child(odd) {
+    align-self: flex-start;
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+#conversation div:nth-child(even) {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Input container */
+#input-container {
+    display: flex;
+    padding: 10px;
+    background: #ffffff;
+}
+
+#userInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+#userInput:focus {
+    border-color: #007bff;
+}
+
+#sendButton {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#sendButton:hover {
+    background-color: #0056b3;
+}
